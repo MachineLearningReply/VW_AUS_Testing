@@ -9,7 +9,7 @@ resource "aws_glue_catalog_table" "table_csv" {
   table_type = "EXTERNAL_TABLE"
 
   parameters = {
-    UPDATED_BY_CRAWLER = "piotr_test_crawler"
+    UPDATED_BY_CRAWLER = "piotr_test_crawler_csv"
     compressionType = "none"
 	  classification = "csv"
   }
