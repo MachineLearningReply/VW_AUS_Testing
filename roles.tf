@@ -16,7 +16,7 @@ resource "aws_iam_role" "glue_role" {
   })
 
   inline_policy {
-    name   = "piotr_test_policy"
+    name   = "piotr_test_glue_policy"
     policy = jsonencode({
     "Version": "2012-10-17",
     "Statement": [
