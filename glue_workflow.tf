@@ -23,7 +23,7 @@ resource "aws_glue_workflow" "workflow" {
 resource "aws_glue_trigger" "trigger_start_crawler" {
   name          = "piotr_test_trigger_start_crawler"
   type          = "ON_DEMAND"
-  enabled       = false
+  enabled       = true
   workflow_name = aws_glue_workflow.workflow.name
 
   actions {
